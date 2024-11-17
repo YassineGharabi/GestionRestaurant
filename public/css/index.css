@@ -329,7 +329,7 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            gap: 3px;
+            gap: 4px;
         }
 
         .show-item{
