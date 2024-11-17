@@ -313,3 +313,32 @@
             border: 1px solid var(--light-orange); 
             cursor: pointer;
         }
+
+        /*  */
+
+        .show{
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        
+        .show .show-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 3px;
+        }
+
+        .show-item{
+            width: 30%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border: 1px solid var(--light-orange);
+            background-color: var(--brown);
+            border-radius: var(--border-radius);
+        }

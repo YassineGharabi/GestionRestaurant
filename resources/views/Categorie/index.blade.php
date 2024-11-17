@@ -4,13 +4,13 @@
             @foreach ($categories as $item)
                 <div class="ccard">
                     <div >
-                        <img class="card-img" src="{{ asset('storage/'.$item->photo) }}" alt="Title" />
+                        <a href=" {{ route('categorie.show', $item->id ) }} "><img class="card-img" src="{{ asset('storage/'.$item->photo) }}" alt="Title" /></a>
                         <div >
                             <h4 >{{ $item->title }}</h4>
                         </div>
                     </div>
                     <div class="actions">
-                        <span>
+                        <span>  
                             <form action="{{ route('categorie.edit', $item->id)}}" method="GET">
                                 <button>MODIFIER</button>
                             </form>

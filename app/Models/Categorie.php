@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Plat;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Categorie extends Model
 {
@@ -12,4 +13,10 @@ class Categorie extends Model
         'title',
         'photo',
     ];
+
+    public function plats(){
+        return $this->hasMany(Plat::class);
+    }
+
+
 }

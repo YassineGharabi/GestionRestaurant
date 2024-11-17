@@ -44,7 +44,8 @@ class CategorieController extends Controller
      */
     public function show(Categorie $categorie)
     {
-        //
+        $plats = $categorie->plats;
+        return view('categorie.show',compact('plats','categorie'));
     }
 
     /**
